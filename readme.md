@@ -14,6 +14,7 @@ The diagram does not have to be a sequence diagram. Any sensible way of presenti
 sequenceDiagram
     participant browser
     participant server
-    browser->>server: HTTP POST /new_note
+    browser->>server: HTTP POST https://studies.cs.helsinki.fi/exampleapp/notes
+    server-->>browser status code 302
 ```
 
