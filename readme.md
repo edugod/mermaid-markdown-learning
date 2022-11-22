@@ -2,11 +2,19 @@
 
 I can use mermain on github now, this markdown its a practice.
 
-graph TD;
-  First-->Second
-Second-->Third
-  Third-->First
-    A-->B;
-    A-->C;
-    B-->D;
-    C-->D;
+classDiagram
+Class01 <|-- AveryLongClass : Cool
+<<Interface>> Class01
+Class09 --> C2 : Where am I?
+Class09 --* C3
+Class09 --|> Class07
+Class07 : equals()
+Class07 : Object[] elementData
+Class01 : size()
+Class01 : int chimp
+Class01 : int gorilla
+class Class10 {
+  <<service>>
+  int id
+  size()
+}
