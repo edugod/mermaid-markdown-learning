@@ -15,7 +15,7 @@ sequenceDiagram
     participant BROWSER
     participant SERVER
     BROWSER->>SERVER: HTTP POST https://studies.cs.helsinki.fi/exampleapp/notes
-    SERVER-->>BROWSER: status code 302
+    SERVER-->>BROWSER: status code 302, do a new HTTP GET with adress notes
     BROWSER->>SERVER: HTTP GET https://studies.cs.helsinki.fi/exampleapp/notes
     SERVER-->>BROWSER: HTML code
     BROWSER->>SERVER: HTTP GET https://studies.cs.helsinki.fi/exampleapp/main.css
