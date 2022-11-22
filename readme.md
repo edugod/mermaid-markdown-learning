@@ -21,8 +21,8 @@ sequenceDiagram
     BROWSER->>SERVER: HTTP GET https://studies.cs.helsinki.fi/exampleapp/main.css
     SERVER-->>BROWSER: main.css
     BROWSER->>SERVER: HTTP GET https://studies.cs.helsinki.fi/exampleapp/main.js
-    SERVER-->>BROWSER main.js
-    BROWSER->>SERVER HTTP GET https://studies.cs.helsinki.fi/exampleapp/data.json
-    SERVER-->>BROWSER data.json
+    SERVER-->>BROWSER: main.js
+    BROWSER->>SERVER: HTTP GET https://studies.cs.helsinki.fi/exampleapp/data.json
+    SERVER-->>BROWSER: data.json
 ```
 
