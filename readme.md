@@ -14,5 +14,6 @@ The diagram does not have to be a sequence diagram. Any sensible way of presenti
 sequenceDiagram
     participant browser
     participant server
-    browser: submit form
+    browser->>server: HTTP POST /new_note
 ```
+
