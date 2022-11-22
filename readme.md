@@ -17,6 +17,12 @@ sequenceDiagram
     BROWSER->>SERVER: HTTP POST https://studies.cs.helsinki.fi/exampleapp/notes
     SERVER-->>BROWSER: status code 302
     BROWSER->>SERVER: HTTP GET https://studies.cs.helsinki.fi/exampleapp/notes
-    BROWSER-->>SERVER: HTML code
+    SERVER-->>BROWSER: HTML code
+    BROWSER->>SERVER: HTTP GET https://studies.cs.helsinki.fi/exampleapp/main.css
+    SERVER-->>BROWSER: main.css
+    BROWSER->>SERVER: HTTP GET https://studies.cs.helsinki.fi/exampleapp/main.js
+    SERVER-->>BROWSER main.js
+    BROWSER->>SERVER HTTP GET https://studies.cs.helsinki.fi/exampleapp/data.json
+    SERVER-->>BROWSER data.json
 ```
 
