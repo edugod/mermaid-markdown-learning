@@ -15,6 +15,6 @@ sequenceDiagram
     participant browser
     participant server
     browser->>server: HTTP POST https://studies.cs.helsinki.fi/exampleapp/notes
-    server-->>browser status code 302
+    server-->>browser: status code 302
 ```
 
