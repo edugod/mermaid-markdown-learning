@@ -12,9 +12,11 @@ The diagram does not have to be a sequence diagram. Any sensible way of presenti
 
 ```mermaid
 sequenceDiagram
-    participant browser
-    participant server
-    browser->>server: HTTP POST https://studies.cs.helsinki.fi/exampleapp/notes
-    server-->>browser: status code 302
+    participant BROWSER
+    participant SERVER
+    BROWSER->>SERVER: HTTP POST https://studies.cs.helsinki.fi/exampleapp/notes
+    SERVER-->>BROWSER: status code 302
+    BROWSER->>SERVER: HTTP GET https://studies.cs.helsinki.fi/exampleapp/notes
+    BROWSER-->>SERVER: HTML code
 ```
 
